@@ -6,7 +6,6 @@ https://www.tooplate.com/view/2115-marvel
 
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 body {
   font-family: "Maven Pro", sans-serif;
@@ -54,7 +53,12 @@ p {
   color: #5b5b5b;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   letter-spacing: -1px;
 }
@@ -76,7 +80,8 @@ h3 {
 }
 
 h3,
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -128,11 +133,11 @@ b, strong {
   animation: BottomTotop 6s linear infinite 0s;
 }
 
-.animated-item:nth-child(2n+2) {
+.animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
 
-.animated-item:nth-child(3n+3) {
+.animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
 }
 
@@ -163,7 +168,6 @@ b, strong {
     opacity: 0;
   }
 }
-
 
 .navbar {
   position: fixed;
@@ -276,15 +280,15 @@ b, strong {
   right: 6px;
 }
 .color-mode-icon:after {
-  font-family: 'unicons';
-  content: '\ea9f';
+  font-family: "unicons";
+  content: "\ea9f";
   font-size: 30px;
   font-weight: 300;
   font-style: normal;
 }
 .color-mode-icon.active:after {
-  font-family: 'unicons';
-  content: '\eb65';
+  font-family: "unicons";
+  content: "\eb65";
   font-size: 30px;
   color: #ffffff;
 }
@@ -308,8 +312,14 @@ b, strong {
 }
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
-.dark-mode .color-mode {
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode .color-mode,
+.dark-mode .p {
   color: #ffffff;
 }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
@@ -344,7 +354,7 @@ b, strong {
   text-align: center;
 }
 .timeline-yr span {
-  /* color: #ffffff; */
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   display: block;
@@ -354,7 +364,7 @@ b, strong {
 .timeline-info {
   display: inline-block;
   vertical-align: top;
-  max-width: 432px;
+  max-width: 600px;
   margin-left: 6em;
 }
 .timeline-info small {
@@ -365,6 +375,11 @@ b, strong {
   vertical-align: middle;
   margin-left: 15px;
 }
+
+.dark-mode .timeline-info small {
+  color: #ffffff;
+}
+
 
 .timeline {
   margin: 20px 0;
@@ -391,7 +406,6 @@ b, strong {
   font-weight: bold;
 }
 
-
 .owl-carousel .owl-nav span {
   display: none;
 }
@@ -403,27 +417,27 @@ b, strong {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  font-family: 'unicons';
+  font-family: "unicons";
   font-size: 100px;
   line-height: normal;
 }
 .owl-carousel .owl-nav .owl-prev:before {
-  content: '\e833';
+  content: "\e833";
   left: -45px;
 }
 .owl-carousel .owl-nav .owl-next:before {
-  content: '\e836';
+  content: "\e836";
   right: -45px;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
+.owl-theme .owl-nav [class*="owl-"] {
   background: none;
   border-radius: 0;
   margin: 0;
   padding: 0;
   font-size: inherit;
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
   color: #ffc200;
 }
 .owl-theme .owl-dots .owl-dot {
@@ -433,12 +447,9 @@ b, strong {
   width: 8px;
   height: 8px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
-}
-
-.google-map iframe {
-  width: 100%;
 }
 
 .contact-form {
@@ -455,7 +466,8 @@ b, strong {
 .contact-form .form-control:not(textarea) {
   height: 48px;
 }
-.contact-form .form-control:hover, .contact-form .form-control:focus {
+.contact-form .form-control:hover,
+.contact-info .form-control:focus {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
@@ -464,31 +476,32 @@ b, strong {
   color: #ffffff;
   font-weight: bold;
   border: 0;
+  width: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
+  float: right; /* Add this line to align the button to the right */
 }
 .contact-form .submit-btn:hover {
   background: #474559;
 }
 
-.contact-info {
-  background: #474559;
-  border-radius: 0 0 3px 3px;
-  position: relative;
-  bottom: 8px;
-}
-.contact-info p, .contact-info a {
-  color: #f7f3f3;
+.social-links {
+  display: flex; /* Use flexbox to align items in a row */
+  gap: 20px; /* Optional: Add spacing between icons */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-links .uil {
-  color: #f7f3f3;
-  font-size: 20px;
-  display: block;
-  margin: 5px 0;
+  color: #0c0c0d;
+  font-size: 40px;
+  display: inline-block;
+  margin: 0;
 }
+
 .social-links .uil:hover {
-  color: #ffc200;
+  color: #ffc200; /* Hover color */
 }
 
 @media (min-width: 1270px) {
@@ -511,7 +524,7 @@ b, strong {
   }
 
   .mobile-mt-2,
-  .contact-form {
+  .contact-form .contact-area {
     margin-top: 2em;
   }
 
@@ -543,9 +556,9 @@ b, strong {
   }
 }
 @media (max-width: 580px) {
-	.animated-info {
-		min-width: 200px;
-	}
+  .animated-info {
+    min-width: 200px;
+  }
   .animated-item {
     font-size: 30px;
   }
@@ -596,7 +609,7 @@ b, strong {
 }
 
 .tools-technologies {
-  padding: 100px 0; 
+  padding: 100px 0;
   position: relative; /* Required for the pseudo-elements */
   overflow: hidden; /* Hide overflow to contain fading */
 }
@@ -610,7 +623,7 @@ b, strong {
 /* Fading effects */
 .tools-technologies:before,
 .tools-technologies:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 50px; /* Width of the fade effect */
@@ -637,10 +650,17 @@ b, strong {
   width: 100%; /* Ensure images fill the container */
   height: 100%; /* Maintain the square shape */
   object-fit: contain; /* Ensure the image fits within the square without distortion */
+  padding: 20px 0;
 }
 
 .dark-mode #github-logo {
   filter: brightness(0) invert(1);
+}
+
+.dark-mode .social-links {
+  img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .fade-left,
@@ -654,29 +674,257 @@ b, strong {
 
 .fade-left {
   left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Default gradient */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  ); /* Default gradient */
 }
 
 .fade-right {
   right: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Default gradient */
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  ); /* Default gradient */
 }
 
 body.dark-mode .fade-left {
-  background: linear-gradient(to right, #0c0c0d, rgba(0, 0, 0, 0)); /* Dark mode gradient */
+  background: linear-gradient(to right, #0c0c0d, rgba(0, 0, 0, 0));
 }
 
 body.dark-mode .fade-right {
-  background: linear-gradient(to left, #0c0c0d, rgba(0, 0, 0, 0)); /* Dark mode gradient */
+  background: linear-gradient(to left, #0c0c0d, rgba(0, 0, 0, 0));
 }
 
 /* Animation styles */
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-50%); /* Scroll all the way */
+    transform: translateX(-50%); /* Scroll all the way */
   }
 }
 
+.contact {
+  padding: 100px 0;
+  /* background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), #DFE3EB;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), #DFE3EB; */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.contact-area .contact-form form .top-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-area .contact-form form .top-input input:last-child {
+  margin-left: 16px;
+}
+.contact-area .contact-form form input {
+  padding: 14px 0 14px 20px;
+  width: 100%;
+  margin-bottom: 16px;
+  /* background-color: #FFFFFF; */
+  border: 1px solid #dfe3eb;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.contact-area .contact-form form textarea {
+  padding: 14px 0 0 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  width: 100%;
+  height: 152px;
+  /* border: 1px solid #DFE3EB; */
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contact-area {
+  height: 100%;
+  padding: 24px;
+  /* background-color: #FFFFFF; */
+  border-radius: 12px;
+  -webkit-box-shadow: 2px 12px 24px rgba(12, 16, 23, 0.15);
+  box-shadow: 2px 12px 24px rgba(12, 16, 23, 0.15);
+  position: relative;
+}
+.contact-area .contact-location-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 35px;
+  margin-right: 20px;
+}
+.contact-area .contact-location-icon .location-text {
+  margin-left: 16px;
+}
+.contact-area .contact-location-icon .location-text p {
+  /* color: #0A1931; */
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.contact-area .bottom-social-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contact-area .bottom-social-icon .social {
+  margin-right: 12px;
+}
+.contact-area .bottom-social-icon .social:last-child {
+  margin-right: 0;
+}
+.contact .round-shape {
+  position: absolute;
+  bottom: 53px;
+  right: 180px;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+}
+.contact .lg-round-shape {
+  position: absolute;
+  top: -285px;
+  left: 0;
+  opacity: 0.5;
+  z-index: -2;
+  pointer-events: none;
+}
+.contact-area .contact-info {
+  margin: 50px 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-area-info {
+    margin-bottom: 20px;
+  }
+  .contact-area-info .contact-form {
+    text-align: center;
+  }
+  .contact-area-info .contact-form form .top-input {
+    display: inline-block;
+    width: 100%;
+  }
+  .contact-area-info .contact-form form .top-input input:last-child {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contact-area-info {
+    margin-bottom: 20px;
+  }
+  .contact-area-info .contact-form {
+    text-align: center;
+  }
+  .contact-area-info .contact-form form .top-input {
+    display: inline-block;
+    width: 100%;
+  }
+  .contact-area-info .contact-form form .top-input input:last-child {
+    margin-left: 0;
+  }
+
+  @media (max-width: 574px) {
+    .contact {
+      padding: 50px 0;
+    }
+    .contact .contact-area-info {
+      margin-bottom: 20px;
+      padding: 24px;
+    }
+    .contact .contact-area h2,
+    .contact .contact-area .h2 {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .contact .contact-area-info .contact-form {
+      text-align: center;
+    }
+    .contact .contact-area-info .contact-form form .top-input {
+      display: inline-block;
+      width: 100%;
+    }
+    .contact .contact-area-info .contact-form form .top-input input:last-child {
+      margin-left: 0;
+    }
+    .contact .contact-area-info .contact-form form .btn--primary {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .contact .contact-area {
+      padding: 24px;
+    }
+    .contact .contact-area h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .contact .contact-area .contact-location-icon {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .contact .contact-area .contact-location-icon .social-lg-round {
+      width: 60px;
+      height: 60px;
+    }
+    .contact .contact-area .bottom-social-icon {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .contact .contact-area .bottom-social-icon .social {
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    .contact .contact-area .bottom-social-icon .social-sm-round {
+      margin-right: 0;
+      border-radius: 0px;
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0;
+    }
+    .contact .contact-area .contact-location-icon .location-text {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .contact .contact-area .contact-location-icon .location-text span {
+      font-size: 16px;
+    }
+    .contact .contact-area .contact-location-icon .location-text p {
+      font-size: 16px;
+    }
+  }
+}
