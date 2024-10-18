@@ -12,25 +12,32 @@
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init("C7F1UFC_CeHdRGn3D");  
+      })();
+    </script>
+
     
-<!--
-
-Tooplate 2115 Marvel
-
-https://www.tooplate.com/view/2115-marvel
-
--->
+<!-- Tooplate 2115 Marvel https://www.tooplate.com/view/2115-marvel -->
+ 
   </head>
   <body>
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Farida</a>
-
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/farida.png" alt="Farida" class="profile-img">
+            Farida
+          </a>
+        
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -96,7 +103,7 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                        <img src="assets/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
                     </div>
                 </div>
 
@@ -105,14 +112,14 @@ https://www.tooplate.com/view/2115-marvel
     </section>
 
     <!-- PROJECTS -->
-    <section class="project py-5" id="project">
+    <!-- <section class="project py-5" id="project">
         <div class="container">
                 
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
                       <div class="col-lg-8 mx-auto">
-                        <h2>Things I have designed for digital media agencies</h2>
+                        <h2>My Latest Projects</h2>
                       </div>
 
                       <div class="owl-carousel owl-theme">
@@ -150,14 +157,84 @@ https://www.tooplate.com/view/2115-marvel
                   </div>
                 </div>
         </div>
-    </section>
+    </section> -->
+
+  <!-- Project Section Starts Here-->
+  <section class="project">
+    <div class="container">
+      <div class="col-lg-8 text-center mx-auto">
+        <h2>My Latest Projects</h2>
+      </div>
+        <!-- <h2 class="font-sm">My Selected Work
+            <div class="deep-dot"></div>
+        </h2> -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 project-content">
+             <div class="project-work">
+                 <div class="project-work-image">
+                     <img src="assets/linkup-app.png" alt="">
+                 </div>
+                 <div class="project-work-text">
+                     <h5 class="font-mini"><a href="#">Linkup App</a></h5>
+                     <h5 class="font-mini"><a href="#">A service connection platform using .NET Web API and Flutter.</a></h5>
+                     <a href="https://play.google.com/store/apps/details?id=com.linkup.serviceapp" class="right-arrow-icon">               
+                         <span>View Project</span>                    
+                         <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                             <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                     </a>
+                 </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 project-content">
+                <div class="project-work">
+                    <div class="project-work-image">
+                        <img src="assets/marketeer-marketplace.png" alt="">
+                    </div>
+                    <div class="space py-4"></div>
+                    <div class="project-work-text">
+                        <h5 class="font-mini"><a href="#">Marketeer's Marketplace</a></h5>
+                        <h5 class="font-mini"><a href="#">A platform connecting businesses to marketing professionals using .NET Core MVC.</a></h5>
+                        <a href="https://github.com/faridaahmeedd/Marketeers-Marketplace" class="right-arrow-icon">               
+                            <span>View Project</span>                    
+                            <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 project-content">
+                <div class="project-work">
+                    <div class="project-work-image">
+                        <img src="assets/digital-wallet.png" alt="">
+                    </div>
+                    <div class="project-work-text">
+                        <h5 class="font-mini"><a href="#">Fawry-like System</a></h5>
+                        <h5 class="font-mini"><a href="#">Java-based web service for managing payments with RESTful APIs.</a></h5>
+                        <a href="https://github.com/faridaahmeedd/Payment_System_Webservice" class="right-arrow-icon">               
+                            <span>View Project</span>                    
+                            <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Project Section Ends Here-->
 
   <!-- FEATURES -->
-  <section class="resume py-4" id="resume">
+  <section class="resume y-5" id="resume">
     <div class="container">
         <!-- <div class="row"> -->
-          <div class="col-12 education">
-            <h2 class="mb-4">Educations</h2>
+          <div class="col-12 education" data-aos="fade-up">
+            <h2 class="my-4">Educations</h2>
             <div class="timeline" style="padding: 20px; border-radius: 8px;">
                 <div class="timeline-wrapper">
                     <div class="timeline-yr">
@@ -170,7 +247,7 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
             </div>
         </div>
-            <div class="col-12 experience">
+            <div class="col-12 experience" data-aos="fade-up">
                 <h2 class="mb-4">Experiences</h2>
                 <div class="timeline" style="padding: 20px; border-radius: 8px;">
                     <div class="timeline-wrapper">
@@ -230,7 +307,7 @@ https://www.tooplate.com/view/2115-marvel
 
 
     <!-- CONTACT -->
-    <section class="contact py-5" class="contact">
+    <section class="contact py-5" class="contact" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-12">
@@ -272,13 +349,13 @@ https://www.tooplate.com/view/2115-marvel
               </div>
     
                 <ul class="social-links mt-10">
-                  <li><a href="https://linkedin.com/in/yourprofile" data-toggle="tooltip" data-placement="left" title="LinkedIn">
+                  <li><a href="https://www.linkedin.com/in/farida-ahmed-b7b511248" data-toggle="tooltip" data-placement="left" title="LinkedIn">
                     <img src="assets/linkedin-logo.svg" alt="LinkedIn" width="40">
                   </a></li>
-                  <li><a href="https://github.com/yourprofile" data-toggle="tooltip" data-placement="left" title="GitHub">
+                  <li><a href="https://github.com/faridaahmeedd" data-toggle="tooltip" data-placement="left" title="GitHub">
                     <img src="assets/github-logo.svg" alt="GitHub" width="35">
                   </a></li>
-                  <li><a href="https://github.com/yourprofile" data-toggle="tooltip" data-placement="left" title="Instagram">
+                  <li><a href="https://www.instagram.com/farida_ahmeed" data-toggle="tooltip" data-placement="left" title="Instagram">
                     <img src="assets/instagram-logo.svg" alt="Instagram" width="35">
                   </a></li>
                 </ul>    
@@ -289,25 +366,22 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              <form id="contact-form">
                 <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
-                  </div>
-
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                  </div>
-
-                  <div class="col-lg-6 col-12 ml-auto">
-                    <input type="submit" class="form-control submit-btn" value="Send">
-                  </div>
+                    <div class="col-lg-6 col-12">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <input type="email" class="form-control" name="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="col-lg-6 col-12 ml-auto">
+                        <input type="submit" class="form-control submit-btn" value="Send">
+                    </div>
                 </div>
-              </form>
+            </form>
             </div>
           </div>
         </div>
@@ -354,3 +428,25 @@ https://www.tooplate.com/view/2115-marvel
   toolsInner.style.animationDuration = `${totalWidth / 50}s`; // Adjust speed for smoother scrolling
 </script>
 
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duration of animation in milliseconds
+    once: true, // whether animation should happen only once
+  });
+</script>
+
+<script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submit
+
+      // Send form data using EmailJS
+      emailjs.sendForm('service_ufl2wu5', 'template_pphi24s', this)
+          .then(function() {
+              alert('Message Sent!');
+          }, function(error) {
+              alert('Failed to send message: ' + JSON.stringify(error));
+          });
+  });
+</script>
